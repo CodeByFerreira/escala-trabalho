@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Escala de Trabalho</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
       padding: 20px;
-      background-color: #f2f2f2;
     }
     h1 {
+      text-align: center;
       color: #007bff;
     }
     .escala {
-      margin-top: 30px;
-      background-color: white;
-      border-radius: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
       padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .escala h2 {
-      margin-bottom: 20px;
+      margin-top: 0;
     }
     .escala ul {
       list-style: none;
       padding: 0;
-      text-align: left;
     }
     .escala li {
-      padding: 5px 0;
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .escala li:last-child {
+      border-bottom: none;
     }
   </style>
 </head>
