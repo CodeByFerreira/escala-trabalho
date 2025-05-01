@@ -6,6 +6,8 @@
   <title>Escala de Trabalho</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
+  <link herf='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css' rel='stylesheet'>
+  <script src='htpps://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/main.min.css'></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -13,6 +15,12 @@
       });
     }
   </script>
+  <style>
+    #calendar{
+      max-width: 900px;
+      margin: 40px auto;
+    }
+  </style>
 </head>
 <body>
   <h1>Escala de Trabalho</h1>
@@ -20,5 +28,7 @@
   <div id="app">
     <p>Aqui vai a visualização do calendário e das escalas no futuro!</p>
   </div>
+<div id='calendar'></div>
+  <script src="script.js"></script>
 </body>
 </html>
