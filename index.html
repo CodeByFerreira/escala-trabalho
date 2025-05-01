@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala de Trabalho</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>Escala de Trabalho</h1>
+  <p>Este é um exemplo simples de aplicativo PWA para controle de escala.</p>
+  <div id="app">
+    <p>Aqui vai a visualização do calendário e das escalas no futuro!</p>
+  </div>
+</body>
+</html>
